@@ -5,7 +5,7 @@
 // @description  This user script allows you to watch ororo.tv for free, unlimited.
 // @author       tzubertowski
 // @match        http://ororo.tv/en/shows/*
-// @match        http://ororo.tv/ru/shows/*
+// @match        http://ororo.tv/shows/*
 // @match        http://ororo.tv/pl/shows/*
 // @match        http://ororo.tv/es/shows/*
 // @match        http://*.ororo.tv/uploads/video/file/*
