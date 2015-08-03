@@ -4,7 +4,10 @@
 // @version      0.1
 // @description  This user script allows you to watch ororo.tv for free, unlimited.
 // @author       tzubertowski
+// @match        http://ororo.tv/en/shows/*
+// @match        http://ororo.tv/ru/shows/*
 // @match        http://ororo.tv/pl/shows/*
+// @match        http://ororo.tv/es/shows/*
 // @match        http://*.ororo.tv/uploads/video/file/*
 // ==/UserScript==
 var vid = document.getElementsByName("media");
@@ -16,7 +19,7 @@ if(typeof vid  !== 'undefined' && vid.length > 0) {
 document.addEventListener("DOMNodeInserted", function(e) {
     var videoBeforeRedirect = document.getElementsByClassName('vjs-tech');
     if(typeof videoBeforeRedirect  !== 'undefined' && videoBeforeRedirect.length > 0) {
-       var pathUrl = videoBeforeRedirect[0].src
+       var pathUrl = videoBeforeRedirect[0].src;
        window.location.replace(pathUrl);     
     }
 }, false);
